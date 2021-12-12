@@ -11,12 +11,21 @@
     "@sanity/base",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/desk-tool"
+    "@sanity/desk-tool",
+    "@sanity/dashboard",
+    "media",
+    "icon-picker",
+    "simple-star-rating",
+    "note-field",
+    "nyancat-spinner",
+    "unicorn-slider",
+    "autocomplete-tags"
   ],
   "env": {
     "development": {
       "plugins": [
-        "@sanity/vision"
+        "@sanity/vision",
+        "nyancat-spinner"
       ]
     }
   },
@@ -24,6 +33,18 @@
     {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./structure.js"
+    },
+    {
+      "implements": "part:@sanity/form-builder/input/image/asset-sources",
+      "path": "./assetSources.js"
+    },
+    {
+      "implements": "part:@sanity/form-builder/input-resolver",
+      "path": "./inputResolver.js"
     }
   ]
 }
