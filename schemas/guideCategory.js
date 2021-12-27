@@ -15,7 +15,7 @@ export default {
     },
     {
       name: 'slideNumber',
-      title: '순서',
+      title: '우선순위',
       type: 'number',
       description: '높을 수록 위에 (오른쪽일수록 높은 것)',
       options: {
@@ -24,4 +24,18 @@ export default {
       noTranslation: true
     }
   ],
+  initialValue: {
+    slideNumber: 5
+  },
+  preview: {
+    select: {
+      title: 'title'
+    },
+    prepare(selection) {
+      const {title} = selection
+      return {
+        title: (title && (title.ko ? (title.ko + (title.en ? ` (${title.en})` : '')) : (title.en))) || '이름없음',
+      }
+    }
+  }
 }
