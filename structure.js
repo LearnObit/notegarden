@@ -33,6 +33,30 @@ export default () => {
                     .child()
                 ])
             ),
+        S.listItem()
+          .title('Update Notices')
+          .child(
+            S.list()
+              .title('Update Notices')
+              .items([
+                S.listItem()
+                  .title('Update Notice - Large')
+                  .child(
+                    S.documentTypeList('updateNoticeLarge')
+                  ),
+                S.listItem()
+                  .title('-> Multiple edit (for Categories)')
+                  .child(createSuperPane('updateNoticeLarge', S)),
+                S.listItem()
+                  .title('Update Notice - Small')
+                  .child(
+                    S.documentTypeList('updateNoticeSmall')
+                  ),
+                S.listItem()
+                  .title('-> Multiple edit (for Desktop)')
+                  .child(createSuperPane('updateNoticeSmall', S)),
+              ])
+          ),
           S.listItem()
             .title('FAQ')
             .child(
