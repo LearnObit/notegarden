@@ -10,8 +10,7 @@ import guideCategory from './guideCategory'
 import guideForDesktop from './guideForDesktop'
 import shortKeys from './shortkeys'
 import strings from './strings'
-import updateNoticeLarge from './updateNoticeLarge'
-import updateNoticeSmall from './updateNoticeSmall'
+import updateNotice from './updateNotice'
 
 const customSchemaTypes = [
   shortKeys,
@@ -19,8 +18,7 @@ const customSchemaTypes = [
   guideCategory,
   guideForDesktop,
   strings,
-  updateNoticeLarge,
-  updateNoticeSmall
+  updateNotice,
 ]
 
 const addLocalizationToDocumentType = (schemaType) => {

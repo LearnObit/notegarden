@@ -18,3 +18,15 @@ H
 	yarn.lock,5\3\53585a096fe3a3b96321113856ae62602995a33b
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+D
+schemas/shortkeys.js,0\1\01de91f425fb7bfb83465db8dc8d95dcf89b4ae6
+G
+schemas/blockContent.js,1\3\1318b24959e7cf82d30f4dc5312f08410a4e2775
+H
+schemas/guideCategory.js,6\b\6b5698d8fe45e782c652c1a96e0c39616b5a9b3e
+A
+schemas/author.js,4\b\4ba476c8ba64a4b81f594b3239ba922ccb066fae
+B
+schemas/strings.js,9\b\9bde432aad6375714bc4942cbeaf0433eb15d8f2
+=
+structure2.js,d\2\d21994c12ee51955c49e55be9345c12bab578a3f

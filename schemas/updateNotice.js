@@ -1,6 +1,6 @@
 export default {
-  name: 'updateNoticeLarge',
-  title: 'Update Notice - Large',
+  name: 'updateNotice',
+  title: 'Update Notice',
   type: 'document',
   fields: [
     {

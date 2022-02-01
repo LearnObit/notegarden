@@ -40,21 +40,13 @@ export default () => {
               .title('Update Notices')
               .items([
                 S.listItem()
-                  .title('Update Notice - Large')
+                  .title('Update Notice')
                   .child(
-                    S.documentTypeList('updateNoticeLarge')
+                    S.documentTypeList('updateNotice')
                   ),
                 S.listItem()
-                  .title('-> Multiple edit (for Categories)')
-                  .child(createSuperPane('updateNoticeLarge', S)),
-                S.listItem()
-                  .title('Update Notice - Small')
-                  .child(
-                    S.documentTypeList('updateNoticeSmall')
-                  ),
-                S.listItem()
-                  .title('-> Multiple edit (for Desktop)')
-                  .child(createSuperPane('updateNoticeSmall', S)),
+                  .title('-> Multiple edit')
+                  .child(createSuperPane('updateNotice', S))
               ])
           ),
           S.listItem()
