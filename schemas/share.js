@@ -29,7 +29,7 @@ export default {
       type: 'string',
     },
     {
-      name: 'previewWords',
+      name: 'previewContents',
       title: '프리뷰 단어들',
       type: 'string',
     },
@@ -64,7 +64,17 @@ export default {
           type: 'string'
         }
       ]
-    }
+    },
+    {
+      name: 'downloadedUsers',
+      title: '다운받은 유저들',
+      type: 'array',
+      of: [{
+        name: 'userId',
+        title: '아이디',
+        type: 'string',
+      }]
+    },
 
   ],
   initialValue: {
