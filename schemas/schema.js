@@ -11,6 +11,8 @@ import guideForDesktop from './guideForDesktop'
 import shortKeys from './shortkeys'
 import strings from './strings'
 import updateNotice from './updateNotice'
+import share from './share'
+import tagPlace from './tagPlace'
 
 const customSchemaTypes = [
   shortKeys,
@@ -137,5 +139,7 @@ export default createSchema({
 // add the custom types and map them with the config and fields and finally add the refs object in as well
     ...customSchemaTypes,
     // i18n_refs_object,
-  ].map(schema => addLocalizationToSchemaType(schema))),
+  ].map(schema => addLocalizationToSchemaType(schema))).concat([
+    share, tagPlace
+  ]),
 })

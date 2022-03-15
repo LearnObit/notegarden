@@ -17,6 +17,7 @@ export default {
       name: 'datetime',
       title: '날짜',
       type: 'datetime',
+      description: '주의: 여기서 설정되는 날짜는 지역시간이고 앱에서 측정되는 날짜는 UTC 시간임',
       noTranslation: true
     }
   ],

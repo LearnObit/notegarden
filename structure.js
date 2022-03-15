@@ -49,6 +49,27 @@ export default () => {
                   .child(createSuperPane('updateNotice', S))
               ])
           ),
+        S.listItem()
+          .title('Share')
+          .child(
+            S.list()
+              .title('Shared Contents')
+              .items([
+                S.listItem()
+                  .title('Shared Contents')
+                  .child(
+                    S.documentTypeList('sharedContents')
+                  ),
+                S.listItem()
+                  .title('-> Multiple edit (for Shared Contents)')
+                  .child(createSuperPane('sharedContents', S)),
+                S.listItem()
+                  .title('Tag Places')
+                  .child(
+                    S.documentTypeList('tagPlace')
+                  )
+              ])
+          ),
           S.listItem()
             .title('FAQ')
             .child(
