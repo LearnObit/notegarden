@@ -15,15 +15,16 @@ export default {
     }
   ],
   initialValue: {
+    tags: []
   },
   preview: {
     select: {
-      title: 'title'
+      tags: 'tags'
     },
     prepare(selection) {
-      const {title} = selection
+      const {tags} = selection
       return {
-        title: (title && (title.ko ? (title.ko + (title.en ? ` (${title.en})` : '')) : (title.en))) || '이름없음',
+        title: tags.length ? tags.join(',') : '없음'
       }
     }
   }
