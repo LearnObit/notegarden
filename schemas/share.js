@@ -82,7 +82,7 @@ export default {
     description: '',
     tags: [],
     language: '',
-    previewWords: '',
+    previewContents: '',
     count: 0,
     likes: 0
   },
